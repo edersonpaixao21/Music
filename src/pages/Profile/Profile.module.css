@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.userContainer {
+  margin-top: 3rem;
+  padding: 3rem;
+  width: 30rem;
+  height: 25rem;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  
+  background-color: var(--blue-100);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userImageContainer {
+  display: flex;
+}
+
+.userIcon {
+  margin-right: 3rem;
+  margin-left: 9.8rem;
+}
+
+.userImage {
+  height: 10rem;
+  width: 10rem;
+}
+
+.editButton {  
+  border: none;
+  border-radius: 2px;
+
+  height: 2rem;
+  width: 7rem;
+  margin-top: 1rem;
+  
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.nameHeader {
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.name {
+  margin-top: 0.3rem;
+  color: var(--silver);
+}
+
+.emailHeader {
+  color: var(--white);
+  margin: 1rem;
+}
+
+.descriptionHeader {
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.description {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.logoutBtn {
+  border: none;
+  border-radius: 2px;
+
+  height: 2rem;
+  width: 7rem;
+  margin-top: 3rem;
+
+  background-color: var(--red);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    width: 22rem;
+  }
+
+  .userImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userIcon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .userImage {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,66 @@
+.songContainer {
+  width: 17rem;
+}
+
+.favoriteContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  color: var(--white);
+  border-radius: 10px;
+  gap: 10px;
+  width: 40rem;
+
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--blue-200);
+}
+
+.favoriteContainer p {
+  color: var(--white);
+}
+
+.audioPlayer {
+  border-radius: 50px;
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  margin-top: 0.5rem;
+  width: 200px;
+  height: 25px;
+}
+
+input[type="checkbox"] {
+  color: var(--white);
+  display: none;
+}
+
+label {
+  color: var(--silver-200);
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+label:hover {
+  color: var(--red);
+  transition: color 0.5s;
+}
+
+input[type="checkbox"]:checked + label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 5px;
+  color: var(--red);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .favoriteContainer {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+  }
+}

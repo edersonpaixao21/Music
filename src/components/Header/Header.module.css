@@ -1,0 +1,77 @@
+.containerHeader {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 3rem;
+  height: 6rem;
+  width: 6.5rem;
+}
+
+.containerUser {
+  margin-right: 3rem;
+  background-color: var(--white);  
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  margin-top: 1.75rem;
+}
+
+.containerUser div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;  
+}
+
+.containerUser div span {
+  margin-top: 3px;  
+  
+  color: var(--black);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.containerLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  text-decoration: none;
+  padding: 1rem;
+  width: 28.4rem;
+  font-weight: bold;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--blue-100);
+}
+
+.containerLinks section:hover {  
+  text-decoration: none;
+  opacity: 60%;
+}
+
+@media (max-width: 1300px) {
+  .links {
+    width: 21.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .containerLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    width: 27.5rem;
+  }
+}

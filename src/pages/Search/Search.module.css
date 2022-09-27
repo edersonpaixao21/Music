@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.inputContainer {
+  margin-top: 2rem;
+  padding: 2rem;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  background-color: var(--blue-100);
+}
+
+.inputContainer input {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  color: var(--black);
+  height: 2rem;
+  width: 25rem;
+  padding-left: 10px;
+}
+
+.inputContainer button {
+  border: none;
+  border-radius: 0.5rem;
+
+  height: 2rem;
+  width: 10rem;
+  margin-left: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.inputContainer button:not(:disabled):hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.inputContainer button:disabled {
+  cursor: not-allowed;
+  background-color: var(--blue);
+}
+
+.notFoundAlbum {  
+  display: flex;
+  justify-content: center;
+  
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.artistName {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.artistName span {
+  color: var(--white);
+}
+
+.albumContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 2rem 0;
+  padding: 0 5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.album {
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--blue-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 16rem;
+  height: 20rem;
+}
+
+.album:hover {
+  transform: scale(104%);
+}
+
+.album img {
+  margin-top: 0.875rem;
+  height: 13rem;
+}
+
+.artistInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.artistInfo h4 {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+.artistInfo p {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87,5%;
+  }
+
+  .albumContainer {
+    margin: 1rem 0 2rem 0;
+    padding-left: 13.5rem;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .album {
+    height: 20rem;
+  }
+
+  .inputContainer {
+    margin-top: 2rem;
+    padding: 2rem;
+    height: 5%;
+    gap: 10px;
+    width: 25rem;
+  }
+
+  .inputContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inputContainer input {
+    border: var(--silver-100) solid 1px;
+    outline: none;
+    
+    height: 2rem;
+    width: 15rem;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+  
+  .inputContainer button {
+    height: 2rem;
+    width: 5rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  
+    background-color: var(--silver-200);
+    color: var(--white);
+  }
+
+  .notFoundAlbum {  
+    font-size: 2rem;
+  }
+}
