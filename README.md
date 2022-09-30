@@ -27,7 +27,7 @@ Interface do usuário.
 
 ### ⌨ Instalação
 Para a utilização é preciso clonar o repositório, instalar as depedências e rodar o projeto.
-
+ 
 ```bash
 # Abra o terminal/cmd e em seguida Clone este repositório
 $ git clone https://github.com/edersonpaixao21/Music.git
